@@ -1,4 +1,4 @@
-package com.ym.mafk09.UI
+package com.ym.mafk09.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity

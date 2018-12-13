@@ -1,4 +1,4 @@
-package com.ym.mafk09.UI
+package com.ym.mafk09.ui
 
 import android.net.Uri
 import android.os.Bundle
