@@ -22,7 +22,9 @@ class CustomBroadcastActivity : AppCompatActivity() {
     private fun sendBroadcastMsg(view:View){
         var msg = sendMessageByBroadcast.text.toString();
         var intent = Intent();
-        intent.action = "com.ym.mafk09.ACTION_SEND_BASE";
+        intent.action = "com.ym.mafk09.action.sendMsg";
         intent.putExtra("customBroadcastMsg",msg);
+        println("sendBroadcast action is ----------->${intent.action}--$msg")
+        sendBroadcast(intent);
     }
 }

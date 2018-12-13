@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity  () {
             startActivity(Intent("com.ym.mafk09.intent.action.appleList"))
         }
 
+        toCustomBroadcast.onClick {
+
+            startActivity(Intent("com.ym.mafk09.intent.action.toCustomBroadcast"))
+        }
+
         // 学习broadcast功能
         initBroadcastForBatteryChange();
 

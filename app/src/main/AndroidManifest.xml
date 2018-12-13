@@ -65,7 +65,11 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name=".customBroadcast.AppStateChangeReceiver">
+        <receiver
+            android:enabled="true"
+            android:exported="true"
+            android:name=".customBroadcast.AppStateChangeReceiver"
+        >
             <intent-filter>
 
                 <!-- 应用卸载 -->
@@ -78,11 +82,15 @@
         </receiver>
 
         <activity android:name=".ui.CustomBroadcastActivity">
+            <intent-filter>
+                <action android:name="com.ym.mafk09.intent.action.toCustomBroadcast"></action>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
 
         <receiver android:name=".customBroadcast.CustomBroadcastBaseMsg">
             <intent-filter>
-                <action android:name="com.ym.mafk09.ACTION_SEND_BASE"></action>
+                <action android:name="com.ym.mafk09.action.sendMsg"></action>
             </intent-filter>
         </receiver>
     </application>

@@ -9,8 +9,9 @@ class CustomBroadcastBaseMsg : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         var actionName = intent?.action;
-        Log.d(TAG,"action --is -->$actionName---${intent.getIntExtra("customBroadcastMsg",0)}")
+        Log.d(TAG,"action --is -->$actionName---${intent.getStringExtra("customBroadcastMsg")}")
     }
+
     companion object {
         public  val TAG = "CustomBroadcastBaseMsg"
     }
