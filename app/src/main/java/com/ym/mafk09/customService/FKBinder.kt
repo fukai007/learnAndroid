@@ -1,4 +1,4 @@
-package com.ym.mafk09
+package com.ym.mafk09.customService
 
 import android.os.Binder
 import android.os.Parcel
@@ -12,7 +12,7 @@ class FKBinder() : Binder(), Parcelable {
 
     }
 
-    fun setServer(fkService:MyService){
+    fun setServer(fkService: MyService){
         this.fkService = fkService
     }
 

@@ -1,4 +1,4 @@
-package com.ym.mafk09
+package com.ym.mafk09.customAppStore
 
 import android.app.Application
 // 全局共享的数据-2018-12-09 21:56

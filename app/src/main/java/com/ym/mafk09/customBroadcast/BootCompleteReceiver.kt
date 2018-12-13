@@ -1,4 +1,4 @@
-package com.ym.mafk09
+package com.ym.mafk09.customBroadcast
 
 import android.content.BroadcastReceiver
 import android.content.Context

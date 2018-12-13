@@ -1,13 +1,16 @@
-package com.ym.mafk09
+package com.ym.mafk09.UI
 
 import android.content.*
-import android.nfc.Tag
 import android.os.BatteryManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import android.widget.TextView
+import com.ym.mafk09.customAppStore.AppStore
+import com.ym.mafk09.customService.FKBinder
+import com.ym.mafk09.customService.MyService
+import com.ym.mafk09.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.toast
