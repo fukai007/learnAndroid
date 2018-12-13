@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mafk09</string>
+    <string name="title_activity_m2t">m2t</string>
+    <string name="backpageone">backPageOne</string>
+    <string name="topage2">toPage2</string>
+    <string name="title_activity_m3t">m3t</string>
+    <string name="title_activity_apple_list">apple_list</string>
+</resources>

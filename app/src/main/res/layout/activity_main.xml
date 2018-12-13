@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/sample_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="Hello World!"
+                    android:layout_marginStart="8dp"
+            />
+            <com.github.zagum.switchicon.SwitchIconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:si_animation_duration="500"
+                    app:si_disabled_alpha=".3"
+                    app:si_disabled_color="#b7b7b7"
+                    app:si_tint_color="#ff3c00"
+                    app:si_enabled="false"
+                    app:si_no_dash="true"
+                    app:srcCompat="@drawable/ic_cloud"
+                    android:layout_marginTop="8dp"/>
+            <Button
+                    android:text="@string/topage2"
+                    android:textAllCaps="false"
+                    android:layout_width="200dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/toPage2" android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+            />
+            <Button
+                android:text="startServerBtn"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="53dp"
+                android:id="@+id/startServerBtn"
+            />
+            <Button
+                android:text="stopServerBtn"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="53dp"
+                android:id="@+id/stopServerBtn"
+            />
+            <Button
+                android:text="bindServerBtn"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="53dp"
+                android:id="@+id/bindServerBtn"
+            />
+            <Button
+                android:text="unBindServerBtn"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="53dp"
+                android:id="@+id/unBindServerBtn"
+            />
+            <Button
+                android:text="syncData"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/syncData"
+            />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
