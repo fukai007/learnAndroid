@@ -31,6 +31,13 @@
                     app:srcCompat="@drawable/ic_cloud"
                     android:layout_marginTop="8dp"/>
             <Button
+                    android:text="toM2t"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:id="@+id/toM2t"
+            />
+            <Button
                     android:text="@string/topage2"
                     android:textAllCaps="false"
                     android:layout_width="match_parent"

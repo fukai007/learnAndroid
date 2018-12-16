@@ -25,8 +25,7 @@
                 android:label="@string/title_activity_m2t"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="com.ym.mafk09.intent.action.fromP1"/>
-
+                <action android:name="com.ym.mafk09.intent.action.m2t"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -93,6 +92,22 @@
                 <action android:name="com.ym.mafk09.action.sendMsg"></action>
             </intent-filter>
         </receiver>
+
+
+        <receiver android:name=".customBroadcast.HeightSendOrderBroadcast">
+            <intent-filter android:priority="100">
+                <action android:name="com.ym.mafk09.action.sendMsgForOrder"></action>
+            </intent-filter>
+        </receiver>
+
+
+
+        <receiver android:name=".customBroadcast.LowSendOrderBroadcast">
+            <intent-filter android:priority="99">
+                <action android:name="com.ym.mafk09.action.sendMsgForOrder"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

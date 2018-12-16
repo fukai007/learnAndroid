@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity  () {
         // setContentView(text2) 会覆盖搜索的UI组件-待解决-2018-12-09 21:53
 
 
-
+        toM2t.onClick {
+            startActivity(Intent("com.ym.mafk09.intent.action.m2t"))
+        }
         toPage2.onClick {
             // startActivity(Intent(this@MainActivity,m2t::class.java))
             // startActivity(Intent("com.ym.mafk09.intent.action.fromP1"))
